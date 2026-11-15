@@ -1,0 +1,279 @@
+#outerWrapper {
+	min-height: 100vh;
+	background: #020618;
+	text: #f1f5f9;
+	font-family: Sans-Serif;
+	padding: 1rem 2.5rem;
+}
+
+#innerContainer {
+	max-width: 56rem;
+	margin: 0 auto;
+	background: #0f172b;
+	border-radius: 1rem;
+	border: #1e293b 1px solid;
+	padding: 1.5rem;
+	overflow: hidden;
+}
+
+#innerContainer > * + * {
+	margin-top: 2rem;
+}
+
+header {
+	border-bottom: 1px solid #1e293b;
+	padding-bottom: 2rem;
+}
+
+#headerWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 1rem;
+	width: fit-content;
+}
+
+#infoContainer {
+	width: fit-content;
+}
+
+#name {
+	font-size: 2rem;
+	width: 36rem;
+	font-weight: bold;
+}
+
+#specialization {
+	font-size: 1rem;
+	width: fit-content;
+	font-weight: 500;
+	color: #34d399;
+}
+
+#city {
+	font-size: 0.8rem;
+	color: #90a1b9;
+	width: fit-content;
+}
+
+#headerButtons {
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	font-size: 0.8rem;
+}
+
+.button {
+	padding: 0.5rem 1rem;
+	color: white;
+	border-radius: 0.5rem;
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+#emailHref {
+	background-color: #1E293B;
+	border: 1px solid #334155;
+}
+
+#emailHref:hover {
+	background-color: #334155;
+}
+
+#githubHref {
+	background-color: #009669;
+}
+
+#githubHref:hover {
+	background-color: #00bc7d;
+}
+
+@media(min-width: 640px) {
+	#outerWrapper {
+		padding: 1rem 1.5rem;
+	}
+
+	#innerWrapper {
+		padding: 2.5rem;
+	}
+
+	#headerButtons {
+		flex-direction: row;
+	}
+}
+
+main > * + * {
+	margin-top: 2.5rem;
+}
+
+main section > * + * {
+	margin-top: 0.75rem;
+}
+
+main section h2 {
+	font-size 1.75rem;
+	font-weight: 500;
+	color: #E2E8F0;
+	border-left: 4px solid;
+	border-color: #10B981;
+	padding-left: 0.75rem;
+}
+
+section#about p {
+	color: #CBD5E1;
+	font-size: 1.25rem;
+}
+
+#skillContainer > * + * {
+	margin-top: 0.75rem;
+}
+
+.skillCategory {
+	background: #020617;
+	padding: 1.5rem;
+	border-radius: 0.75rem;
+	border: 1px solid #1D293D;
+	transition: 0.3s;
+}
+.skillCategory h3 {
+	font-size:0.75rem;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+	color: #93A3B8;
+}
+.skillItemContainer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+}
+.skillItem {
+	background: #1e293b;
+	color: #93a3b8;
+	font-size: 0.75rem;
+	padding: 0.25rem 0.5rem;
+	border-radius: 0.25rem;
+	border: 1px solid #334155;
+}
+
+.skillCategory:hover {
+	border: 1px solid #334155;
+}
+
+#lpmonitor {
+	background: #020617;
+	padding: 1.5rem;
+	border-radius: 0.75rem;
+	border: 1px solid #1e293b;
+	transition: 0.3s;
+}
+#lpmonitor:hover {
+	border: 1px solid #334155;
+}
+#projectHeader {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 0.5rem;
+	margin-bottom: 0.75rem;
+}
+#projectHeader h3 {
+	font-size: 1.5rem;
+	max-width: 36rem;
+	font-weight: bold;
+}
+.muted {
+	color: #94a3b8;
+	font-weight: normal;
+}
+#delayed {
+	background: #F59E0B1A;
+	color: #FBBF24;
+	border: 1px solid #F59E0B33;
+	font-size: 0.75rem;
+	font-weight: 500;
+	padding: 0.25rem 0.5rem;
+	border-radius: 0.25rem;
+}
+
+#linksContainer {
+	display: flex;
+	gap: 1rem;
+	font-size: 0.75rem;
+	font-weight: 500;
+	margin: 0.75rem;
+}
+
+.projectLink {
+	text-decoration: none;
+	color: #34D399;
+}
+.projectLink:hover {
+	text-decoration: underline;
+}
+
+#projectDetails {
+	list-style-type: disc;
+	list-style-position: inside;
+}
+#projectDetails li::marker {
+	color: #10B981;
+}
+#education h3 {
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+#education p {
+	color: #94a3b8;
+	font-size: 0.75rem;
+}
+
+.between {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+#education span {
+	font-size: 0.5rem;
+	font-weight: 500;
+	color: #34d399;
+	background-color: #022c2266;
+	border: 1px solid #065f46;
+	border-radius: 100rem;
+	padding: 0.25rem 0.75rem;
+}
+
+footer {
+	border-top: 1px solid #1e293b;
+	padding-top: 1.5rem;
+	font-size: 0.75rem;
+	text-align: center;
+	color: #65748b;
+}
+
+@media(min-width: 768px) {
+	#headerWrapper {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	#projectHeader {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	section#about p {
+		font-size: 1rem;
+	}
+}
+
+@media(min-width: 1024px) {
+	#outerWrapper {
+		padding: 1rem 1rem;
+	}
+}

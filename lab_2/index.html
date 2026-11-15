@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CV - Кохманський Михайло</title>
+		<link rel="stylesheet" href="styles.css">
+		<style>		
+			*, *::before, *::after {
+			  box-sizing: border-box;
+			}
+
+			body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+			  margin: 0;
+			}
+
+			html {
+			  color-scheme: light dark;
+			}
+
+			body {
+			  min-height: 100vh;
+			  line-height: 1.5;
+			  font-family: system-ui, -apple-system, sans-serif;
+			}
+
+			img, picture, video, canvas, svg {
+			  display: block;
+			  max-width: 100%;
+			}
+
+			input, button, textarea, select {
+			  font: inherit;
+			}
+
+			p, h1, h2, h3, h4, h5, h6 {
+			  overflow-wrap: break-word;
+			}
+
+			p {
+			  text-wrap: pretty;
+			}
+			h1, h2, h3, h4, h5, h6 {
+			  text-wrap: balance;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="outerWrapper">
+			<div id="innerContainer">
+				<header>
+					<div id="headerWrapper">
+						<div id="infoContainer">
+							<h1 id="name" style="color: #fff" >Кохманський Михайло Михайлович</h1>
+							<p id="specialization">Information security specialist</p>
+							<p id="city">📍 Місто: Львів, Україна</p>
+						</div>
+						<div id="headerButtons">
+							<a
+								href="mailto:mykhailo.kokhmanskyi.kb.2025@lpnu.ua"
+								id="emailHref"
+								class="button"
+							>
+            					📧 Email
+							</a>
+							<a
+								href="https://github.com/MykhailoKokhmanskyi"
+								target="_blank"
+								rel="noopener noreferrer"
+								id="githubHref"
+								class="button"
+							>	
+        					    💻 GitHub
+							</a>
+						</div>
+					</div>
+				</header>
+				<main>
+					<section id="about">
+						<h2>Про мене</h2>
+						<p>
+							Я студент спеціальності "Кібербезпека", який захоплюється вивченням методів захисту інформаційних систем, аналізом вразливостей та мережевою безпекою. Активно розвиваю практичні навички в тестуванні на проникнення, безпеці вебдодатків та криптографії, а також регулярно беру участь у CTF-змаганнях. Прагну застосувати отримані знання в реальних проектах для виявлення загрози та побудови надійних систем захисту даних.
+						</p>
+					</section>
+					<section id="skills">
+						<h2>Навики</h2>
+						<div id="skillContainer">
+							<div id="languagesContainer" class="skillCategory">
+								<h3>Мови програмування</h3>
+								<div class="skillItemContainer">
+									<span class="skillItem">HTML</span>
+									<span class="skillItem">CSS</span>
+									<span class="skillItem">JavaScript</span>
+									<span class="skillItem">Python3</span>
+									<span class="skillItem">Lua</span>
+								</div>
+							</div>
+							<div id="librariesContainer" class="skillCategory">
+								<h3>Бібліотеки і фреймворки</h3>
+								<div class="skillItemContainer">
+									<span class="skillItem">React.js</span>
+									<span class="skillItem">Express.js</span>
+									<span class="skillItem">Next.js</span>
+									<span class="skillItem">JWT</span>
+								</div>
+							</div>
+							<div id="toolsContainer" class="skillCategory">
+								<h3>Інструменти</h3>
+								<div class="skillItemContainer">
+									<span class="skillItem">Git</span>
+									<span class="skillItem">GitHub</span>
+									<span class="skillItem">Vim</span>
+									<span class="skillItem">Linux</span>
+									<span class="skillItem">LaTeX</span>
+									<span class="skillItem">SQL</span>
+									<span class="skillItem">MySQL</span>
+									<span class="skillItem">PostgreSQL</span>
+									<span class="skillItem">MongoDB</span>
+									<span class="skillItem">SSL</span>
+									<span class="skillItem">SSH</span>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section id="projects">
+						<h2>Проекти</h2>
+						<article id="lpmonitor">
+							<div id="projectHeader">
+								<h3>LPMonitor <span class="muted">- Платформа краудсорсингового моніторингу сервісів</span></h3>
+								<span id="delayed">Проект відкладено</span>
+							</div>
+
+							<div id="skillContainer">
+								<span class="skillItem">Node.js</span>
+								<span class="skillItem">Express.js</span>
+								<span class="skillItem">AWS (Lightsail, SES)</span>
+								<span class="skillItem">HTML</span>
+								<span class="skillItem">SSR</span>
+								<span class="skillItem">PostgreSQL</span>
+							</div>
+							<div id="linksContainer">					
+								<a href="https://lpmonitor.org" class="projectLink">🌐 Live Demo</a>
+								<a href="https://github.com/MykhailoKokhmanskyi/LPMonitor" class="projectLink">📦 GitHub Repository</a>
+							</div>
+							<ul id="projectDetails">
+								<li>Розробив та розгорнув прототип системи моніторингу доступності університетських серввісів на основі краудсорсингу.</li>
+								<li>Реалізував базову систему автентифікації користувачів та проміжне програмне забезпечення (middleware) для обробки запитів.</li>
+								<li>Налаштував обмеження частоти запитів (Rate Limiting) для захисту сервера від перевантаження та зловживань.</li>
+								<li>Налаштував хостинг серверного вебдодатка (SSR) на базі AWS Lightsail, керування DNS-записами та інтегрував AWS SES для надсилання електронних листів для підтвердження електронної адреси.</li>
+							</ul>
+						</article>
+					</section>
+					<section id="education">
+						<h2>Освіта</h2>
+						<article class="skillCategory between">
+							<div>
+								<h3>F5 - Кібербезпека</h3>
+								<p>Національний Університет "Львівська Політехніка"</p>
+							</div>
+							<span>2025-2029</span>
+						</article>
+					</section>
+				</main>
+				<footer><p>&copy; 2026 Кохманський Михайло. Всі права захищено.</p></footer>
+			</div>
+		</div>
+	</body>
+</html>
